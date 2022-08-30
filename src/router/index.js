@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Ejemplo from '../views/Ejemplo.vue'
+import Mostrar from '../views/Mostrar.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -10,6 +11,17 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/Ejemplo',
+    name: 'Ejemplo',
+    component: Ejemplo
+  },
+  {
+    path: '/Mostrar',
+    name: 'Mostrar',
+    component: Mostrar
+  },
+  
   {
     path: '/about',
     name: 'about',
