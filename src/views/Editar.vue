@@ -95,9 +95,18 @@
 
         },
         mounted:function(){
-            let direccion="https://api.solodata.es/pacientes?id=454";
+            this.$router.params.id
+            let direccion="https://api.solodata.es/pacientes?id"+this.$router.params.id;
             axios.get(direccion).then(datos=>{
                 this.form.nombre=datos.data[0].Nombre
+                this.form.direccion=datos.data[0].DNI
+                this.form.correo=datos.data[0].Correo
+                this.form.codigoPostal=datos.data[0].codigoPostal
+                this.form.genero=datos.data[0].Genero
+                 this.form.telefono=datos.data[0].Telefono
+                this.form.fechaNacimiento=datos.data[0].fechaNacimiento
+                this.form.dni=datos.data[0].Nombre
+                this.form.token=datos.data[0].Token
             });
         }
     }
