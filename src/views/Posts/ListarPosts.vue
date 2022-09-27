@@ -1,5 +1,7 @@
 <template>
 <div>
+    <navbar/>
+    <siderbar/>
     <b-button @click="nuevo()" size="sm" variant="primary" class="mb-2 ">
       <b-icon icon="pencil-fill" aria-hidden="true"></b-icon> 
     </b-button>
@@ -28,7 +30,8 @@
 </template>
 <script>
 import axios from 'axios'
-
+import navbar from '../../components/Navbar.vue'
+import siderbar from '../../components/Siderbar.vue'
 export default{
     name:'ListarPosts',
     data(){
@@ -49,11 +52,12 @@ export default{
         listap:null,
        }
     },
-    component:{
-
+    components:{
+      navbar,
+      siderbar
     },
     computed:{
-
+      
     },
     methods: {
         nuevo(){
