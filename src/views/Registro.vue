@@ -79,7 +79,7 @@
 <script>
 import axios from 'axios';
 export default {
-  name:"Registrar",
+  name:"registro",
 
   data(){
         return {

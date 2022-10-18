@@ -47,7 +47,7 @@
     import axios from 'axios'
     
     export default{
-        name:'',
+        name:'nuevoposts',
         data(){
          return{
            post:{

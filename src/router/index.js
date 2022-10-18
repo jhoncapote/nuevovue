@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Ejemplo from '../views/Ejemplo.vue'
+import Registro from '../views/Registro.vue'
 import Mostrar from '../views/Mostrar.vue'
 import Editar from '../views/Editar.vue'
 
 import EditarPosts from '../views/Posts/EditarPosts.vue'
 import NuevoPosts from '../views/Posts/NuevoPosts.vue'
-import listarPosts from '../views/Posts/ListarPosts.vue'
+import ListarPosts from '../views/Posts/ListarPosts.vue'
+
 
 import logins from '../views/Auth/login.vue'
 import registrar from '../views/Auth/registrar.vue'
@@ -26,6 +27,38 @@ const routes = [
     name: 'registrar',
     component:registrar
   },
+  {
+    path: '/mostrar',
+    name: 'mostrar',
+    component:Mostrar
+  },
+  {
+    path: '/editar',
+    name: 'editar',
+    component:Editar
+  },
+  {
+    path: '/registro',
+    name: 'registro',
+    component:Registro
+  },
+  {
+    path: '/editarposts',
+    name: 'editarposts',
+    component:EditarPosts
+  },
+  {
+    path: '/listarposts',
+    name: 'listarposts',
+    component:ListarPosts
+  },
+  {
+    path: '/nuevoposts',
+    name: 'nuevoposts',
+    component:NuevoPosts
+  },
+ 
+  
   
   {
     path: '/about',

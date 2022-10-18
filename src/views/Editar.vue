@@ -74,7 +74,7 @@
 <script>
     import axios from 'axios';
     export default{
-        name:"Editar",
+        name:"editar",
         data(){
             return{
                 form:{

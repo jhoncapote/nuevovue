@@ -33,7 +33,7 @@ import axios from 'axios'
 import navbar from '../../components/Navbar.vue'
 import siderbar from '../../components/Siderbar.vue'
 export default{
-    name:'ListarPosts',
+    name:'listarposts',
     data(){
      return{
         fields:[
